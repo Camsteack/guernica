@@ -12,6 +12,7 @@ module.exports = {
   attributes: {
   	fisrtname : 'string',
   	lastname : 'string',
+  	title : 'string',
   	email : 'string',
   	profession: 'string',
   	bio : 'string',
