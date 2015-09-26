@@ -16,8 +16,9 @@ module.exports = {
 
     profile: function(req, res) {
 		Artist.find({id: req.param('id')}).exec(function findArtist(err, found) {
+			var artist = found.length ? found[0] : '';
     		return res.view({
-            	artist: found
+            	artist: artist
         	});
     	});
     }
