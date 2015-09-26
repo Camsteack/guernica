@@ -16,7 +16,10 @@ body {
     margin-bottom: 0px;
 }
 
+
+
 .jumbotron h1 {
+    margin-top: 60px;
     color: white;
     text-align: center;
     margin-bottom: 70px;
@@ -52,4 +55,18 @@ body {
   width: 200px;
   height: 200px;
   margin-left: 20%;
+}
+
+.panel-body {
+  display: none;
+}
+
+.footer {
+  color: white;
+  border: 50%;
+  text-align: center;
+  background-color: #c73a58;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 5px solid white;
+  border-style: solid;
 }
