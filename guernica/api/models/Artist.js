@@ -6,15 +6,13 @@
 */
 
 module.exports = {
-  connection: 'guernicaMongodbServer',
-  tableName: 'artist',
 
   attributes: {
-  	fisrtname : 'string',
-  	lastname : 'string',
+  	firstName : 'string',
+  	lastName : 'string',
   	email : 'string',
   	profession: 'string',
-  	cartegory: {
+  	category: {
   		model: 'Category'
   	},
   	bio : 'string',

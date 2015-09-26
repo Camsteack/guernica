@@ -40,7 +40,19 @@ module.exports.routes = {
   '/profile/:id': {
     controller: 'home',
     action: 'profile'
+  },
+
+
+  '/message/inbox': {
+    controller: 'message',
+    action: 'inbox'
+  },
+
+  '/message/sent': {
+    controller: 'message',
+    action: 'sent'
   }
+
 
   /***************************************************************************
   *                                                                          *
