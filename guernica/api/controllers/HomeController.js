@@ -12,7 +12,14 @@ module.exports = {
             	artists: found
         	});
     	});
-
     },
+
+    profile: function(req, res) {
+		Artist.find({id: req.param('id')}).exec(function findArtist(err, found) {
+    		return res.view({
+            	artist: found
+        	});
+    	});
+    }
 };
 

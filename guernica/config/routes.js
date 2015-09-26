@@ -35,6 +35,11 @@ module.exports.routes = {
   '/': {
     controller: 'home',
     action: 'index'
+  },
+
+  '/profile/:id': {
+    controller: 'home',
+    action: 'profile'
   }
 
   /***************************************************************************
