@@ -37,13 +37,10 @@ module.exports.routes = {
     action: 'index'
   },
 
-
-
-
-
-
-
-
+  '/profile/:id': {
+    controller: 'home',
+    action: 'profile'
+  },
 
 
   '/message/inbox': {
@@ -55,6 +52,8 @@ module.exports.routes = {
     controller: 'message',
     action: 'sent'
   }
+
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

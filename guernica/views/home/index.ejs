@@ -1,6 +1,5 @@
 <html lang="en">
   <head>
-      <link rel="stylesheet" href="../../assets/styles/homepage.css" type="text/css">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +24,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -35,7 +34,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,25 +45,52 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Country <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li role="separator"></li>
+                <li><a href="#">Afghanistan</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Burma</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Central African Republic</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Egypt</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Iraq</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Lybia</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mali</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Nigeria</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Pakistan</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Palestine</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Somalia</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sudan</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Syria</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Tunisia</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profession<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li role="separator"></li>
+                <li><a href="#">Designers</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Illustrators</a>
+                </li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Media Artists</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Photographers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Filmmakers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Writers</a></li>
               </ul>
             </li>
           </ul>
@@ -82,42 +109,34 @@
     </nav>
 
     <div class="jumbotron">
-      <h1>Guernica</h1>
-      <a class="btn btn-primary btn-lg" href="#" role="button">About Us</a></p>
-      <div>Logged in as <a><%= artists %></a>.</div>
+      <h1>GU∑RNÎCA</h1>
+      <h3>" We can't afford to loose the truth "</h3>
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">About Us</a></p> -->
     </div>
 
+<% _.each(artists, function (artist) { %>
     <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
+          <h3 class="panel-title"><b><%= artist.firstName %> <%= artist.lastName %></b></h3><br>
+          <img src="images/heart.jpg" alt="..." class="img-circle">
         </div>
         <div class="panel-body">
-          Panel content
+          <h4> Artist Title: <%= artist.title %></h4>
+          <h4>Country: <%= artist.country %></h4>
+          <h4>Description: </h4>
+          <!-- <h4>Contact: <%= artist.email %></h4> -->
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
-    </div>
+    <% }) %>
 
+    <div class="row">
+      <div class="col-md-12 footer">
+          <h3>Made at International-alert.org Hackaton London</h3>
+          <p>all rights reserved</p>
+      </div>
+    </div>
 
   </body>
 </html>
