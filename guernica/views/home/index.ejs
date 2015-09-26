@@ -87,38 +87,20 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">About Us</a></p>
     </div>
 
+<% _.each(artists, function (artist) { %>
     <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
+          <h3 class="panel-title"><%= artist.firstName %> <%= artist.lastName %></h3>
         </div>
         <div class="panel-body">
-          <% _.each(artists, function (artist) { %>
-          <%= artist.firstName %><% }) %>
+          <%= artist.title %>
+          <%= artist.country %>
+          <%= artist.email %>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
-    </div>
-
+    <% }) %>
 
   </body>
 </html>

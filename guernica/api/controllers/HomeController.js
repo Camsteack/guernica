@@ -6,12 +6,13 @@
  */
 
 module.exports = {
-
     index: function (req, res) {
-        return res.view({
-            artists: "name"
-        });
-    },
+    	Artist.find({}).exec(function findAllArtists(err, found) {
+    		return res.view({
+            	artists: found
+        	});
+    	});
 
+    },
 };
 
