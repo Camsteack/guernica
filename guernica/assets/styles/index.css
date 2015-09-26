@@ -1,0 +1,18 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  color: red;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    margin-bottom: 70px;
+    /*font-family: 'Righteous', cursive;*/
+    /*font-family: 'Rock Salt', cursive;*/
+}
+
+.jumbotron .btn-primary {
+  margin-left: 46%;
+}
