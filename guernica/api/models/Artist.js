@@ -7,16 +7,20 @@
 
 module.exports = {
   connection: 'guernicaMongodbServer',
-  tableName: 'visitor',
+  tableName: 'artist',
 
   attributes: {
   	fisrtname : 'string',
   	lastname : 'string',
-  	title : 'string',
   	email : 'string',
   	profession: 'string',
+  	cartegory: {
+  		model: 'Category'
+  	},
   	bio : 'string',
-  	country : 'string',
+  	country : {
+  		model: 'Country'
+  	},
   	profileImage: 'binary'
   }
 };
