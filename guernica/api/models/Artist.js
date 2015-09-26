@@ -6,13 +6,17 @@
 */
 
 module.exports = {
+  connection: 'guernicaMongodbServer',
+  tableName: 'visitor',
 
   attributes: {
   	fisrtname : 'string',
   	lastname : 'string',
   	email : 'string',
+  	profession: 'string',
   	bio : 'string',
-  	country : 'string'
+  	country : 'string',
+  	profileImage: 'binary'
   }
 };
 
