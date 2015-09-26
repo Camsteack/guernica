@@ -6,6 +6,8 @@
 */
 
 module.exports = {
+  connection: 'guernicaMongodbServer',
+  tableName: 'messages',
 
   attributes: {
   	to : 'string',
