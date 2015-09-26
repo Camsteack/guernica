@@ -37,6 +37,11 @@ module.exports.routes = {
     action: 'index'
   }
 
+  '/profile/:id': {
+    controller: 'home',
+    action: 'profile'
+  }
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
