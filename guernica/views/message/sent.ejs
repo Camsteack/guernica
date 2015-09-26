@@ -1,0 +1,15 @@
+
+Sent Items
+
+<% if (messages!=null) {%>
+<% _.each(messages, function (message) { %>
+
+From <li><%= message.from %></li>
+To <li><%= message.to %></li>
+Subject <li><%= message.subject %></li>
+Content <li><%= message.msgContent %></li>
+<% }) %>
+<% } else { %>
+Unable to find the messages
+<% } %>
+

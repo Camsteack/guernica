@@ -35,8 +35,26 @@ module.exports.routes = {
   '/': {
     controller: 'home',
     action: 'index'
-  }
+  },
 
+
+
+
+
+
+
+
+
+
+  '/message/inbox': {
+    controller: 'message',
+    action: 'inbox'
+  },
+
+  '/message/sent': {
+    controller: 'message',
+    action: 'sent'
+  }
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
