@@ -1,13 +1,17 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="/styles/profiles.css">
+
 </head>
 <body>
   <div class="row">
     <div class="profiles-banner col-md-12">
-  	 <h1> Welcome to <br><br><b><%= artist.firstName %>'s <b><br><br> profile</h1>
+     <h1> Welcome to <br><br><b><%= artist.firstName %>'s <b><br><br> profile</h1>
     </div>
   </div>
+  <script type="text/javascript">
+    $('.profiles-banner').css("background-color", "none");
+  </script>
 
   <div class="row first-part">
     <div class="col-sm-6 col-md-4">
