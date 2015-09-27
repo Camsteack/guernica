@@ -94,7 +94,7 @@ module.exports = {
           title: "Media Artist",
           country: "Afghanistan",
           email: "camille.ballouche@gmail.com",
-          profileImage: "Miaouss.jpg",
+          profileImage: "SaskiaFernando.jpg",
           coverImage: "gal8.jpg"
         }).exec(this.callback);
         Artist.create({
