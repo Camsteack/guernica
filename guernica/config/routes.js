@@ -50,16 +50,20 @@ module.exports.routes = {
   '/message/sent': {
     controller: 'message',
     action: 'sent'
-  }
+  },
 
-  'challenges' {
-    controller: 'challenge'
+  '/challenges': {
+    controller: 'challenge',
     action: 'index'
   },
 
   '/projects': {
-    controller: 'project'
+    controller: 'project',
     action: 'index'
+  },
+
+  '/home/about': {
+    view: 'home/about'
   }
 
 
