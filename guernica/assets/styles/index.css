@@ -1,6 +1,6 @@
 body {
   font-family: 'Libre Baskerville', serif;
-  background-color: #ADADAD;
+  background-color: #009591;
   color: black;
 
 }
@@ -55,6 +55,12 @@ body {
   color: black;
 }
 
+.panel-body p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
 .img-circle {
   width: 150px;
   height: 150px;
@@ -70,7 +76,7 @@ body {
   color: white;
   border: 50%;
   text-align: center;
-  background-color: #009571;
+  background-color: #c73a58;
   font-family: 'Montserrat', sans-serif;
   border-top: 5px solid white;
   border-style: solid;

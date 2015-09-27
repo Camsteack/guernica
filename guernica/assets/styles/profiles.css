@@ -5,7 +5,7 @@ body {
 
 .profiles-banner {
   height: 416px;
-  background-color: #f15a29;
+  background-color: #343434;
   margin-bottom: 60px;
 }
 
@@ -13,13 +13,12 @@ body {
   margin-top: 80px;
   color: white;
   font-size: 5.5rem;
-
   text-align: center;
   font-family: 'Rock Salt', cursive;
 }
 
 .first-part {
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   text-align: center;
 }
 
