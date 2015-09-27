@@ -14,7 +14,8 @@ module.exports = {
           country: "Iraq",
           email: "camille.ballouche@gmail.com",
           profileImage: "P1012065.JPG",
-          coverImage: "gal1.jpg"
+          coverImage: "gal1.jpg",
+          bio: "I am a photographer living in Iraq, although I was born in France. I mainly work on lengthy photo-essays which are hard to sell to big newspapers who want short articles and spot news. I spend time in communities to get their voice expressed rather than build a story from a western standpoint. I like to work with Iraqi writers to build my story: I have worked a lot with Baghdad-based Mido Basim."
         }).exec(this.callback);
         Artist.create({
           firstName: "Camille",
@@ -23,7 +24,8 @@ module.exports = {
           country: "Syria",
           email: "camille.ballouche@gmail.com",
           profileImage: "P1012999.JPG",
-          coverImage: "gal3.jpg"
+          coverImage: "gal3.jpg",
+          bio: "I am a Syrian-born designer based in Damascus. I used to work with Syrian television and newspapersbefore the war began in 2011. Here I show my personal work, which illustrates the conflict we’re in, as well as my professional portfolio. I’m keen to meet designers and visual artists from other countries so please get in touch and leave comments!"
         }).exec(this.callback);
         Artist.create({
           firstName: "Diego",
@@ -46,11 +48,12 @@ module.exports = {
         Artist.create({
           firstName: "Joe",
           lastName: "Crinadchi",
-          title: "Writer",
+          title: "Illustrator",
           country: "Sudan",
           email: "camille.ballouche@gmail.com",
           profileImage: "Crinadchi.jpg",
-          coverImage: "gal4.jpg"
+          coverImage: "gal4.jpg",
+          bio: "I live in Bamako, Mali, and have been illustrating children books for 10years; I also organiseworkshops in schools. The arrival of Boko Haram has made it very difficult for us to work. Artists are persecuted. I use to have work but it’s getting more and more problematic. I would be happy to illustrate children books from Europe and other parts of the world."
         }).exec(this.callback);
         Artist.create({
           firstName: "Mohamed",
