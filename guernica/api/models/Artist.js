@@ -6,6 +6,8 @@
 */
 
 module.exports = {
+  connection: 'guernicaMongodbServer',
+  tableName: 'artists',
 
   attributes: {
   	firstName : 'string',
@@ -19,7 +21,7 @@ module.exports = {
   	country : {
   		model: 'Country'
   	},
-  	profileImage: 'binary'
+  	profileImage: 'string'
   }
 };
 

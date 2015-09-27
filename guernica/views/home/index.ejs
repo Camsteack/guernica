@@ -43,12 +43,27 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">About us <span class="sr-only">(current)</span></a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Country <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who are you looking for ? <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator"></li>
+                <li><a href="#">Designers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Illustrators</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Media Artists</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Photographers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Filmmakers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Writers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Where are you looking ? <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li role="separator"></li>
                 <li><a href="#">Afghanistan</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Burma</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Central African Republic</a></li>
                 <li role="separator" class="divider"></li>
@@ -59,6 +74,8 @@
                 <li><a href="#">Lybia</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Mali</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Myanmar</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Nigeria</a></li>
                 <li role="separator" class="divider"></li>
@@ -73,24 +90,6 @@
                 <li><a href="#">Syria</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Tunisia</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profession<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li role="separator"></li>
-                <li><a href="#">Designers</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Illustrators</a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Media Artists</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Photographers</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Filmmakers</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Writers</a></li>
               </ul>
             </li>
           </ul>
@@ -109,22 +108,24 @@
     </nav>
 
     <div class="jumbotron">
-      <h1>GU∑RNÎCA</h1>
+      <h1>GUERNICA</h1>
       <h3>" We can't afford to loose the truth "</h3>
       <!-- <a class="btn btn-primary btn-lg" href="#" role="button">About Us</a></p> -->
     </div>
 
 <% _.each(artists, function (artist) { %>
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title"><b><%= artist.firstName %> <%= artist.lastName %></b></h3><br>
-          <img src="images/heart.jpg" alt="..." class="img-circle">
+          <h3 class="panel-title">
+            <b><a href="/profile/<%= artist.id %>"><%= artist.firstName %> <%= artist.lastName %></a></b>
+          </h3><br>
+          <img src="images/<%= artist.profileImage %>" alt="..." class="center-block img-circle">
         </div>
         <div class="panel-body">
-          <h4> Artist Title: <%= artist.title %></h4>
-          <h4>Country: <%= artist.country %></h4>
-          <h4>Description: </h4>
+          <h4><%= artist.title %></h4>
+          <h4><%= artist.country %></h4>
+          <!-- <h4>Description: </h4> -->
           <!-- <h4>Contact: <%= artist.email %></h4> -->
         </div>
       </div>

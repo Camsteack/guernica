@@ -42,7 +42,6 @@ module.exports.routes = {
     action: 'profile'
   },
 
-
   '/message/inbox': {
     controller: 'message',
     action: 'inbox'
@@ -51,6 +50,20 @@ module.exports.routes = {
   '/message/sent': {
     controller: 'message',
     action: 'sent'
+  },
+
+  '/challenges': {
+    controller: 'challenge',
+    action: 'index'
+  },
+
+  '/projects': {
+    controller: 'project',
+    action: 'index'
+  },
+
+  '/home/about': {
+    view: 'home/about'
   }
 
 
