@@ -1,8 +1,28 @@
 <html lang="en">
 <body>
-	<h4> First Name : <%= artist.firstName %></h4>
-	<h4> Last Name : <%= artist.lastName %></h4>
-	<h4> Artist Title : <%= artist.title %></h4>
-	<h4> Country : <%= artist.country %></h4>
+  <div class="profiles-banner col-md-12">
+	 <h1> Welcome to <br><br><b><%= artist.firstName %><b><br><br> profile</h1>
+  </div>
+
+  <div class="row first-part">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="../images/<%= artist.profileImage %>" alt="..." class=" img-circle profile-image">
+        <div class="caption">
+          <h3><%= artist.firstName %> <%= artist.lastName %></h3>
+          <p>
+            <h4> Profession : <%= artist.title %></h4>
+            <h4> Country : <%= artist.country %></h4>
+            <h4> Description</h4>
+          </p>
+          <p><a href="#" class="btn btn-default" role="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <img src="../images/<%= artist.profileImage %>" alt="..." class=" img-circle profile-image">
+    </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+body {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.profiles-banner {
+  height: 416px;
+  background-color: #f15a29;
+  margin-bottom: 60px;
+}
+
+.profiles-banner h1 {
+  margin-top: 80px;
+  color: white;
+  font-size: 5.5rem;
+
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+}
+
+.first-part {
+  margin-bottom: 50px;
+}
