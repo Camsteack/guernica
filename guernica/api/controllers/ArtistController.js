@@ -49,7 +49,7 @@ module.exports = {
           firstName: "Joe",
           lastName: "Crinadchi",
           title: "Illustrator",
-          country: "Sudan",
+          country: "Mali",
           email: "camille.ballouche@gmail.com",
           profileImage: "Crinadchi.jpg",
           coverImage: "gal4.jpg",
