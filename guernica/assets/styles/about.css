@@ -4,13 +4,18 @@ body {
   color: black;
 }
 
-.profiles-banner {
-  height: 416px;
-  background-color: #3D3434;
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.about-banner {
+  height: 200px;
   margin-bottom: 60px;
 }
 
-.profiles-banner h1 {
+.about-banner h1 {
   margin-top: 80px;
   color: white;
   font-size: 5.5rem;
@@ -18,17 +23,8 @@ body {
   font-family: 'Rock Salt', cursive;
 }
 
-.first-part {
-  /*margin-bottom: 50px;*/
-  text-align: center;
-}
-
-.profile-images {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .footer {
+    margin-top: 100px;
     color: #474747;
     border: 50%;
     text-align: center;
@@ -37,3 +33,8 @@ body {
     border-top: 5px solid white;
     border-style: solid;
 }
+
+.footer p {
+  color: #474747;
+}
+

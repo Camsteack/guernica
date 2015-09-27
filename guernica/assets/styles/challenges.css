@@ -15,13 +15,13 @@ body {
 }
 
 .footer {
-  color: white;
-  border: 50%;
-  text-align: center;
-  background-color: #c73a58;
-  font-family: 'Montserrat', sans-serif;
-  border-top: 5px solid white;
-  border-style: solid;
+    color: #474747;
+    border: 50%;
+    text-align: center;
+    background-color: #E1BD0B;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 5px solid white;
+    border-style: solid;
 }
 
 blockquote {
