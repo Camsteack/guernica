@@ -1,6 +1,7 @@
 body {
-  color: white;
   font-family: 'Libre Baskerville', serif;
+  background-color: #009591;
+  color: black;
 }
 
 .profiles-banner {
@@ -25,4 +26,14 @@ body {
 .profile-images {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.footer {
+  color: white;
+  border: 50%;
+  text-align: center;
+  background-color: #c73a58;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 5px solid white;
+  border-style: solid;
 }

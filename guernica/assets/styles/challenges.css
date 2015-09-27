@@ -1,5 +1,7 @@
 body {
-
+  font-family: 'Montserrat', sans-serif;
+  background-color: #009591;
+  color: black;
 }
 
 .challenges-content {
@@ -9,6 +11,19 @@ body {
 
 .challenges-content .panel-title {
   font-size: 2.0rem;
-  font-family: 'Playfair Display', serif;
   text-align: left;
+}
+
+.footer {
+  color: white;
+  border: 50%;
+  text-align: center;
+  background-color: #c73a58;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 5px solid white;
+  border-style: solid;
+}
+
+blockquote {
+  font-size: 1.5rem;
 }
