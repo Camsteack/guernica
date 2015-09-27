@@ -6,12 +6,6 @@
  */
 
 module.exports = {
-	index: function (req, res) {
-    	Challenge.find({}).exec(function findAllArtists(err, found) {
-    		return res.view({
-            	artists: found
-        	});
-    	});
-    },
+
 };
 
