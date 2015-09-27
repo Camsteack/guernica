@@ -1,6 +1,7 @@
 body {
   font-family: 'Libre Baskerville', serif;
-  background-color: black;
+  background-color: #ADADAD;
+  color: black;
 
 }
 
@@ -44,9 +45,14 @@ body {
   text-align: center;
 }
 
+.panel a {
+  color: black;
+}
+
 .panel-body h4 {
   font-size: 2rem;
   text-align: center;
+  color: black;
 }
 
 .img-circle {

@@ -20,4 +20,10 @@ body {
 
 .first-part {
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.profile-images {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
