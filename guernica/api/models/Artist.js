@@ -21,7 +21,8 @@ module.exports = {
   	country : {
   		model: 'Country'
   	},
-  	profileImage: 'string'
+  	profileImage: 'string',
+    coverImage: 'string'
   }
 };
 

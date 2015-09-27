@@ -53,8 +53,7 @@ module.exports.routes = {
   },
 
   '/challenges': {
-    controller: 'challenge',
-    action: 'index'
+    view: 'challenge/challenge'
   },
 
   '/projects': {
